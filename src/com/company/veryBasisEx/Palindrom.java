@@ -23,6 +23,8 @@ public class Palindrom {
 
 //        }
 //    }
+
+            //OST. WERSJA
 //    static boolean isPalindrome(String slowo) {
 //        for (int i = 0; i < slowo.length() / 2; i++)
 //            if (slowo.charAt(i) != slowo.charAt(slowo.length() - 1 - i))
