@@ -17,9 +17,10 @@ public class Main {
                 zadania.ex02(1000000000);
                 break;
 
+            case 5:
+                System.out.println("input a number <20");
+                int number = scanner.nextInt();
+                System.out.println("Smallest number divisible by all numbers below " + number + " is: "+ zadania.ex05(number));
         }
     }
 }
-
-
-

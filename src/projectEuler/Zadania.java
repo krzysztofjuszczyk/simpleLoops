@@ -14,9 +14,9 @@ public class Zadania {
             poprzednia = minusDwa + aktualna;
             aktualna = poprzednia + minusDwa;
 
-//        System.out.print(minusDwa +" ");
-//        System.out.print(poprzednia+" ");
-//        System.out.print(aktualna+ " ");
+        System.out.print(minusDwa +" ");
+        System.out.print(poprzednia+" ");
+        System.out.print(aktualna+ " ");
 
 //        if (aktualna%2==0){
 //            suma+=aktualna;
@@ -59,5 +59,23 @@ public class Zadania {
         return sum;
     }
 
+    public long ex05(int number){
+        //2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+        //What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+        boolean res = false;
+        long result = 2;
+
+        mainLoop: while (!res){
+            result++;
+            for (int i = 2; i <= number; i++) {
+                if (result % i != 0) {
+                    res = false;
+                    continue mainLoop;
+                }
+            }
+            res = true;
+        }
+    return result;
+    }
 
 }
